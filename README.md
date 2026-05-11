@@ -1,9 +1,7 @@
-#BaloghMartinSzakdolgozat
-
+BaloghMartinSzakdolgozat
 Ez az adattár Balogh Martin szakdolgozatához kapcsolódó minden digitális állományt, forráskódot és dokumentációt tartalmaz.
 
 Az adattár mappaszerkezete és tartalma
-Az adattárban található mappák és fájlok leírása:
 
 CodeSiegeForráskód: A Unity játékmotorban fejlesztett Code Siege oktatójáték teljes C# forráskódját tartalmazza.
 
@@ -15,23 +13,28 @@ SzakdolgozatDokumentum: Tartalmazza a szakdolgozat végleges változatát PDF fo
 
 SzerverKód: A server.js file-t tartalmazza.
 
+README.md: Az adattár gyökérkönyvtárában található dokumentum.
+
 Fejlesztési előzmények
+
 A szoftver fejlesztése során a https://github.com/BMartiin/OOPEduTowerDefenseGame repozitóriumot használtam. A projekt és a Code Siege fejlesztése során beküldött összes korábbi commit ebben az elkülönített fejlesztői környezetben tekinthető meg.
 
 WebGL játék futtatása (Útmutató)
-A legtöbb modern böngésző biztonsági okokból (CORS korlátozások) nem engedélyezi a WebGL tartalom közvetlen futtatását a helyi fájlrendszerről (a fájlra való dupla kattintással vagy file:// protokollal). A játék futtatásához egy helyi webszerverre van szükség.
+
+A legtöbb modern böngésző biztonsági okokból (CORS korlátozások) nem engedélyezi a WebGL tartalom közvetlen futtatását a helyi fájlrendszerről, tehát a fájlra való dupla kattintással nem indul el. A játék futtatásához egy helyi webszerverre van szükség.
 
 Futtatás lépései:
+
 Navigáljon a CodeSiegeFuttatható mappába.
 
-Indítson egy helyi webszervert az adott könyvtárban az alábbi módszerek egyikével:
+Indítson egy helyi webszervert az alábbi módszerek egyikével:
 
-Python: Futtassa a python -m http.server 8000 (vagy régebbi verziónál a python -m SimpleHTTPServer 8000) parancsot a terminálban.
+Python esetén: python -m http.server 8000 parancs a terminálban.
 
-Node.js: Használja a npx http-server parancsot.
+Node.js esetén: npx http-server parancs használata.
 
-VS Code: Használja a Live Server kiterjesztést.
+VS Code esetén: a Live Server kiterjesztés használata.
 
-Nyissa meg a böngészőt, és keresse fel a http://localhost:8000 (vagy a választott port) címet a játék elindításához.
+Nyissa meg a böngészőt, és keresse fel a http://localhost:8000 címet a játék elindításához.
 
-Ez a videó bemutatja, hogyan lehet Python használatával egyszerűen helyi szervert indítani a WebGL projektek teszteléséhez: https://www.youtube.com/watch?v=bdwftOgNudU
+Ez a videó bemutatja, hogyan lehet Python használatával egyszerűen helyi szervert indítani a WebGL projektek teszteléséhez: https://www.youtube.com/watch?v=bdwftOgNudU.
