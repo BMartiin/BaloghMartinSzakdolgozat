@@ -1,4 +1,5 @@
 #BaloghMartinSzakdolgozat
+
 Ez az adattár Balogh Martin szakdolgozatához kapcsolódó minden digitális állományt, forráskódot és dokumentációt tartalmaz.
 
 Az adattár mappaszerkezete és tartalma
